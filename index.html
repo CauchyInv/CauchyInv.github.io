@@ -1,45 +1,667 @@
 <!DOCTYPE html>
-<html>
+<html lang="en" data-theme="light">
 <head>
-    <meta charset="UTF-8">
-    <title>Xitai Jiang</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Personal academic homepage of Xitai Jiang." />
+  <meta name="author" content="Xitai Jiang" />
+  <meta name="theme-color" content="#ffffff" />
+  <title>Xitai Jiang | Academic Homepage</title>
+
+  <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
+  <!-- =========================================================
+       QUICK EDIT GUIDE
+       1) Replace all placeholder text such as [Advisor], [Institute], etc.
+       2) Replace links marked with href="#".
+       3) Replace assets/profile-placeholder.svg with your own photo if desired.
+       4) Delete or comment out sections you do not need.
+       ========================================================= -->
 
-<h1>Xitai Jiang</h1>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="#home" aria-label="Back to homepage">
+        <span class="brand-name">Xitai Jiang</span>
+      </a>
 
-<p>
-Ph.D. Student at Tsinghua University
-</p>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
 
-<h2>About Me</h2>
+      <nav class="main-nav" id="mainNav">
+        <a href="#about">About</a>
+        <a href="#research">Research</a>
+        <a href="#publications">Publications</a>
+        <a href="#projects">Projects</a>
+        <a href="#experience">Experience</a>
+        <a href="#education">Education</a>
+        <a href="#service">Service</a>
+        <a href="#contact">Contact</a>
+        <a class="nav-cta" href="assets/cv.pdf" target="_blank" rel="noopener">CV</a>
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">◐</button>
+      </nav>
+    </div>
+  </header>
 
-<p>
-My research interests include large language models,
-reinforcement learning, and mathematical reasoning.
-</p>
+  <main>
+    <!-- ========================= HERO ========================= -->
+    <section class="hero section" id="home">
+      <div class="container hero-grid">
+        <div class="hero-photo-wrap">
+          <img
+            class="hero-photo"
+            src="assets/profile-placeholder.svg"
+            alt="Profile photo of Xitai Jiang"
+          />
+        </div>
 
-<h2>Publications</h2>
+        <div class="hero-content">
+          <p class="eyebrow">Academic Homepage</p>
+          <h1>Xitai Jiang <span class="cn-name">蒋西泰</span></h1>
+          <p class="hero-role">Ph.D. Student · Tsinghua University</p>
 
-<p>
-<b>Towards Understanding Text Hallucination of Diffusion Models via Local Generation Bias</b>
-<br>
-ICLR 2025
-</p>
+          <p class="hero-summary">
+            My research focuses on large language models, reinforcement learning,
+            mathematical reasoning, credit assignment, and trustworthy generative models.
+          </p>
 
-<h2>Contact</h2>
+          <div class="hero-links">
+            <a class="button primary" href="mailto:your-email@example.com">Email</a>
+            <a class="button" href="#" target="_blank" rel="noopener">Google Scholar</a>
+            <a class="button" href="https://github.com/CauchyInv" target="_blank" rel="noopener">GitHub</a>
+            <a class="button" href="assets/cv.pdf" target="_blank" rel="noopener">CV</a>
+            <a class="button" href="#" target="_blank" rel="noopener">LinkedIn</a>
+          </div>
 
-<p>
-Email: your-email@example.com
-</p>
+          <div class="hero-meta">
+            <span>Tsinghua University</span>
+            <span>Beijing, China</span>
+            <span>Open to research collaboration</span>
+          </div>
+        </div>
+      </div>
+    </section>
 
-<p>
-GitHub:
-<a href="https://github.com/yourname">
-https://github.com/yourname
-</a>
-</p>
+    <!-- ========================= ABOUT ========================= -->
+    <section class="section alt" id="about">
+      <div class="container narrow">
+        <div class="section-heading">
+          <p class="eyebrow">About</p>
+          <h2>About Me</h2>
+        </div>
 
+        <div class="prose">
+          <p>
+            I am a Ph.D. student at <strong>Tsinghua University</strong>, advised by
+            <strong>[Advisor Name]</strong>. My research lies at the intersection of
+            large language models, reinforcement learning, and reasoning.
+          </p>
+
+          <p>
+            I am particularly interested in how curriculum design, intermediate
+            supervision, and fine-grained credit assignment can improve the reasoning
+            capabilities of language models. I am also interested in understanding
+            generation behavior and failure modes in modern generative models.
+          </p>
+
+          <p>
+            Previously, I received my B.S. degree from <strong>[University]</strong>,
+            where I worked on the training dynamics and generalization of neural networks.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================= RESEARCH INTERESTS ========================= -->
+    <section class="section" id="research">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">Research</p>
+          <h2>Research Interests</h2>
+          <p>
+            A broad overview of the research directions I am currently exploring.
+          </p>
+        </div>
+
+        <div class="card-grid research-grid">
+          <article class="card">
+            <h3>Large Language Models</h3>
+            <p>Learning, reasoning, post-training, alignment, and evaluation of foundation models.</p>
+          </article>
+
+          <article class="card">
+            <h3>Reinforcement Learning</h3>
+            <p>RL for reasoning, verifiable rewards, policy optimization, and efficient post-training.</p>
+          </article>
+
+          <article class="card">
+            <h3>Mathematical Reasoning</h3>
+            <p>Long-horizon reasoning, verifiable problem solving, and curriculum-based training.</p>
+          </article>
+
+          <article class="card">
+            <h3>Credit Assignment</h3>
+            <p>Fine-grained, token-level, and process-aware learning signals for complex trajectories.</p>
+          </article>
+
+          <article class="card">
+            <h3>Generative Models</h3>
+            <p>Understanding local generation bias, hallucination, and failure modes in diffusion models.</p>
+          </article>
+
+          <article class="card">
+            <h3>Learning Dynamics</h3>
+            <p>Optimization, generalization, symmetry, and nonlinear dynamics of neural networks.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================= NEWS ========================= -->
+    <section class="section alt" id="news">
+      <div class="container narrow">
+        <div class="section-heading row-heading">
+          <div>
+            <p class="eyebrow">Updates</p>
+            <h2>News</h2>
+          </div>
+          <button class="text-button" id="newsToggle">Show more</button>
+        </div>
+
+        <div class="news-list" id="newsList">
+          <div class="news-item">
+            <time>Sep. 2026</time>
+            <p>[Add your latest research update, submission, release, or conference news here.]</p>
+          </div>
+
+          <div class="news-item">
+            <time>May 2026</time>
+            <p>[Add another recent research update here.]</p>
+          </div>
+
+          <div class="news-item">
+            <time>Apr. 2025</time>
+            <p>Presented our work at ICLR 2025.</p>
+          </div>
+
+          <div class="news-item extra-news">
+            <time>Mar. 2025</time>
+            <p>Our paper was accepted to ICLR 2025.</p>
+          </div>
+
+          <div class="news-item extra-news">
+            <time>2025</time>
+            <p>[Add scholarship, internship, talk, or project release here.]</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================= SELECTED PUBLICATIONS ========================= -->
+    <section class="section" id="publications">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">Publications</p>
+          <h2>Selected Publications</h2>
+          <p>
+            Selected work. Replace the placeholder links with your real Paper / Code / Project URLs.
+          </p>
+        </div>
+
+        <div class="publication-list">
+          <article class="publication">
+            <div class="publication-thumb">
+              <img src="assets/paper-placeholder.svg" alt="Paper teaser placeholder" />
+            </div>
+            <div class="publication-body">
+              <p class="venue">ICLR 2025</p>
+              <h3>Towards Understanding Text Hallucination of Diffusion Models via Local Generation Bias</h3>
+              <p class="authors">
+                <strong>Xitai Jiang</strong>, [Coauthor 1], [Coauthor 2], ...
+              </p>
+              <p class="publication-desc">
+                A short 1–2 sentence description of the core idea, contribution, or finding of this work.
+              </p>
+              <div class="tag-row">
+                <span class="tag">Diffusion Models</span>
+                <span class="tag">Hallucination</span>
+                <span class="tag">Generation Bias</span>
+              </div>
+              <div class="link-row">
+                <a href="#" target="_blank" rel="noopener">Paper</a>
+                <a href="#" target="_blank" rel="noopener">arXiv</a>
+                <a href="#" target="_blank" rel="noopener">Code</a>
+                <a href="#" target="_blank" rel="noopener">Project</a>
+                <a href="#" target="_blank" rel="noopener">BibTeX</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="publication">
+            <div class="publication-thumb">
+              <img src="assets/paper-placeholder.svg" alt="Paper teaser placeholder" />
+            </div>
+            <div class="publication-body">
+              <p class="venue">[Venue / Preprint]</p>
+              <h3>[Your Second Paper Title]</h3>
+              <p class="authors">
+                <strong>Xitai Jiang</strong>, [Coauthor 1], [Coauthor 2]
+              </p>
+              <p class="publication-desc">
+                Add a concise summary explaining what problem the paper solves and what is new.
+              </p>
+              <div class="tag-row">
+                <span class="tag">LLM</span>
+                <span class="tag">Reinforcement Learning</span>
+                <span class="tag">Reasoning</span>
+              </div>
+              <div class="link-row">
+                <a href="#">Paper</a>
+                <a href="#">Code</a>
+                <a href="#">Project</a>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <div class="subsection">
+          <h3 class="subsection-title">All Publications</h3>
+
+          <div class="year-block">
+            <h4>2027</h4>
+            <div class="compact-pub">
+              <span class="pub-index">[1]</span>
+              <div>
+                <strong>[Paper Title]</strong><br />
+                [Author list]. <em>[Venue]</em>.
+                <span class="inline-links"><a href="#">Paper</a> · <a href="#">Code</a></span>
+              </div>
+            </div>
+          </div>
+
+          <div class="year-block">
+            <h4>2026</h4>
+            <div class="compact-pub">
+              <span class="pub-index">[2]</span>
+              <div>
+                <strong>[Paper Title]</strong><br />
+                [Author list]. <em>[Venue / Under Review / Preprint]</em>.
+                <span class="inline-links"><a href="#">Paper</a> · <a href="#">Code</a></span>
+              </div>
+            </div>
+          </div>
+
+          <div class="year-block">
+            <h4>2025</h4>
+            <div class="compact-pub">
+              <span class="pub-index">[3]</span>
+              <div>
+                <strong>Towards Understanding Text Hallucination of Diffusion Models via Local Generation Bias</strong><br />
+                Xitai Jiang, [Coauthors]. <em>ICLR 2025</em>.
+                <span class="inline-links"><a href="#">Paper</a> · <a href="#">Code</a></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================= PROJECTS ========================= -->
+    <section class="section alt" id="projects">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">Projects</p>
+          <h2>Research Projects</h2>
+        </div>
+
+        <div class="project-grid">
+          <article class="project-card">
+            <img src="assets/project-placeholder.svg" alt="Project preview placeholder" />
+            <div class="project-card-body">
+              <p class="venue">Research Project</p>
+              <h3>[Project Name]</h3>
+              <p>
+                One paragraph describing the goal, idea, method, and significance of the project.
+              </p>
+              <p class="contribution">
+                <strong>My contribution:</strong> [Your specific contribution.]
+              </p>
+              <div class="link-row">
+                <a href="#">Project Page</a>
+                <a href="#">GitHub</a>
+                <a href="#">Paper</a>
+                <a href="#">Demo</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <img src="assets/project-placeholder.svg" alt="Project preview placeholder" />
+            <div class="project-card-body">
+              <p class="venue">Open Research</p>
+              <h3>[Second Project]</h3>
+              <p>
+                Use this card for a project that may not yet have a formal publication.
+              </p>
+              <div class="link-row">
+                <a href="#">GitHub</a>
+                <a href="#">Notes</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================= EXPERIENCE ========================= -->
+    <section class="section" id="experience">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">Experience</p>
+          <h2>Research & Industry Experience</h2>
+        </div>
+
+        <div class="timeline">
+          <article class="timeline-item">
+            <div class="timeline-date">2025 – Present</div>
+            <div class="timeline-content">
+              <h3>Ph.D. Researcher · Tsinghua University</h3>
+              <p class="muted">Advisor: [Advisor Name]</p>
+              <p>
+                Research on large language models, reinforcement learning, and mathematical reasoning.
+              </p>
+            </div>
+          </article>
+
+          <article class="timeline-item">
+            <div class="timeline-date">[Year – Year]</div>
+            <div class="timeline-content">
+              <h3>[Research Intern / Visiting Researcher] · [Organization]</h3>
+              <p class="muted">Mentor: [Mentor Name]</p>
+              <p>[Describe your work, project, or research direction.]</p>
+            </div>
+          </article>
+
+          <article class="timeline-item">
+            <div class="timeline-date">[Year]</div>
+            <div class="timeline-content">
+              <h3>[Industry Internship] · [Company]</h3>
+              <p>[Describe your team and the problem you worked on.]</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================= EDUCATION ========================= -->
+    <section class="section alt" id="education">
+      <div class="container narrow">
+        <div class="section-heading">
+          <p class="eyebrow">Education</p>
+          <h2>Education</h2>
+        </div>
+
+        <div class="timeline">
+          <article class="timeline-item">
+            <div class="timeline-date">2025 – Present</div>
+            <div class="timeline-content">
+              <h3>Tsinghua University</h3>
+              <p><strong>Ph.D. in [Program / Department]</strong></p>
+              <p class="muted">Advisor: [Advisor Name]</p>
+            </div>
+          </article>
+
+          <article class="timeline-item">
+            <div class="timeline-date">2021 – 2025</div>
+            <div class="timeline-content">
+              <h3>[University Name]</h3>
+              <p><strong>B.S. in [Major]</strong></p>
+              <p>
+                Undergraduate thesis:
+                <em>Towards Understanding Nonlinear Training Dynamics of Neural Networks</em>.
+              </p>
+              <p class="muted">Advisor: [Advisor Name]</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================= AWARDS ========================= -->
+    <section class="section" id="awards">
+      <div class="container narrow">
+        <div class="section-heading">
+          <p class="eyebrow">Recognition</p>
+          <h2>Honors & Awards</h2>
+        </div>
+
+        <div class="simple-list">
+          <div><span>2026</span><p>[Scholarship / Award Name]</p></div>
+          <div><span>2025</span><p>[Outstanding Thesis / Graduation Honor]</p></div>
+          <div><span>2024</span><p>[Academic Competition / Scholarship]</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================= ACADEMIC SERVICE ========================= -->
+    <section class="section alt" id="service">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">Community</p>
+          <h2>Academic Service</h2>
+        </div>
+
+        <div class="two-column">
+          <div class="card">
+            <h3>Reviewer</h3>
+            <ul>
+              <li>[Conference / Journal], [Year]</li>
+              <li>[Conference / Journal], [Year]</li>
+              <li>[Workshop], [Year]</li>
+            </ul>
+          </div>
+
+          <div class="card">
+            <h3>Organization</h3>
+            <ul>
+              <li>[Workshop organizer / volunteer / student organizer]</li>
+              <li>[Reading group / seminar organization]</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================= TALKS ========================= -->
+    <section class="section" id="talks">
+      <div class="container narrow">
+        <div class="section-heading">
+          <p class="eyebrow">Speaking</p>
+          <h2>Talks</h2>
+        </div>
+
+        <div class="simple-list">
+          <div>
+            <span>[Sep. 2027]</span>
+            <p>
+              <strong>[Talk Title]</strong><br />
+              [Institution / Seminar / Conference] · <a href="#">Slides</a>
+            </p>
+          </div>
+
+          <div>
+            <span>[Jun. 2027]</span>
+            <p>
+              <strong>[Talk Title]</strong><br />
+              [Venue] · <a href="#">Slides</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================= TEACHING ========================= -->
+    <section class="section alt" id="teaching">
+      <div class="container narrow">
+        <div class="section-heading">
+          <p class="eyebrow">Teaching</p>
+          <h2>Teaching</h2>
+        </div>
+
+        <div class="simple-list">
+          <div>
+            <span>[Spring 2027]</span>
+            <p><strong>Teaching Assistant · [Course Name]</strong><br />Tsinghua University</p>
+          </div>
+          <div>
+            <span>[Fall 2026]</span>
+            <p><strong>Teaching Assistant · [Course Name]</strong><br />Tsinghua University</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================= OPEN SOURCE ========================= -->
+    <section class="section" id="opensource">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">Engineering</p>
+          <h2>Open Source</h2>
+        </div>
+
+        <div class="card-grid">
+          <article class="card">
+            <h3>[Repository Name]</h3>
+            <p>[One-line description of the repository.]</p>
+            <div class="link-row">
+              <a href="#">GitHub</a>
+              <a href="#">Documentation</a>
+            </div>
+          </article>
+
+          <article class="card">
+            <h3>[Dataset / Benchmark]</h3>
+            <p>[One-line description of the dataset or benchmark.]</p>
+            <div class="link-row">
+              <a href="#">GitHub</a>
+              <a href="#">Hugging Face</a>
+            </div>
+          </article>
+
+          <article class="card">
+            <h3>[Model Release]</h3>
+            <p>[One-line description of the model release.]</p>
+            <div class="link-row">
+              <a href="#">Model</a>
+              <a href="#">Code</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================= SKILLS ========================= -->
+    <section class="section alt" id="skills">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">Skills</p>
+          <h2>Technical Skills</h2>
+        </div>
+
+        <div class="skills-grid">
+          <div class="skill-group">
+            <h3>Programming</h3>
+            <p>Python · C++ · Bash · Git</p>
+          </div>
+
+          <div class="skill-group">
+            <h3>Machine Learning</h3>
+            <p>PyTorch · Hugging Face · Transformers · vLLM</p>
+          </div>
+
+          <div class="skill-group">
+            <h3>LLM Training</h3>
+            <p>RLHF / RLVR · GRPO / PPO · Distributed Training · Evaluation</p>
+          </div>
+
+          <div class="skill-group">
+            <h3>Research</h3>
+            <p>LLMs · Reinforcement Learning · Reasoning · Diffusion Models</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================= MISC ========================= -->
+    <section class="section" id="misc">
+      <div class="container narrow">
+        <div class="section-heading">
+          <p class="eyebrow">Beyond Research</p>
+          <h2>Miscellaneous</h2>
+        </div>
+
+        <div class="prose">
+          <p>
+            Outside research, I enjoy [photography / music / running / reading / traveling / etc.].
+            This section is optional and can be deleted if you prefer a purely academic homepage.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================= CONTACT ========================= -->
+    <section class="section alt" id="contact">
+      <div class="container narrow">
+        <div class="section-heading">
+          <p class="eyebrow">Contact</p>
+          <h2>Get in Touch</h2>
+        </div>
+
+        <div class="contact-card">
+          <p>
+            I am happy to discuss research ideas and potential collaborations.
+            The best way to reach me is by email.
+          </p>
+
+          <dl class="contact-list">
+            <div>
+              <dt>Email</dt>
+              <dd><a href="mailto:your-email@example.com">your-email@example.com</a></dd>
+            </div>
+            <div>
+              <dt>GitHub</dt>
+              <dd><a href="https://github.com/CauchyInv" target="_blank" rel="noopener">github.com/CauchyInv</a></dd>
+            </div>
+            <div>
+              <dt>Google Scholar</dt>
+              <dd><a href="#" target="_blank" rel="noopener">Add your Scholar profile</a></dd>
+            </div>
+            <div>
+              <dt>LinkedIn</dt>
+              <dd><a href="#" target="_blank" rel="noopener">Add your LinkedIn profile</a></dd>
+            </div>
+            <div>
+              <dt>Office</dt>
+              <dd>[Building / Room], Tsinghua University</dd>
+            </div>
+          </dl>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="currentYear"></span> Xitai Jiang.</p>
+      <p>Built with HTML, CSS & JavaScript · Hosted on GitHub Pages</p>
+      <p>Last updated: <span id="lastUpdated">September 2026</span></p>
+    </div>
+  </footer>
+
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">↑</button>
+
+  <script src="script.js"></script>
 </body>
 </html>
