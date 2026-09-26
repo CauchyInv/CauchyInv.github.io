@@ -11,3 +11,12 @@ Updated version with:
 - Duplicate publication list removed
 
 Deploy all files to the root of `CauchyInv.github.io` and keep GitHub Pages on `main` + `/(root)`.
+
+
+## V4 changes
+
+- Removed Ongoing Research section.
+- Removed Education section from the public homepage.
+- Qwen experience condensed to three bullets and updated to mention ArxivMath, CRITPT, SciCode, and Terminal-Bench Science.
+- Kimi experience condensed to two bullets.
+- Reduced vertical spacing and card padding across the site while keeping the same overall visual style.
