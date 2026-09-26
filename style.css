@@ -785,3 +785,14 @@ html[data-theme="dark"] .button.primary {
     flex-direction: column;
   }
 }
+
+
+/* ===== Personal homepage v2 additions ===== */
+.pending-note { margin: 4px 0 0; color: var(--muted); font-size: 0.9rem; font-style: italic; }
+.compact-pub-list { display: grid; gap: 18px; }
+.experience-list { margin: 14px 0 0; padding-left: 20px; }
+.experience-list li { margin-bottom: 8px; }
+.award-panel { border: 1px solid var(--line); border-radius: var(--radius); background: var(--surface); padding: 24px; }
+.award-panel h3 { margin-bottom: 18px; }
+#awards .simple-list > div { grid-template-columns: 72px 1fr; }
+@media (max-width: 720px) { #awards .simple-list > div { grid-template-columns: 1fr; } }

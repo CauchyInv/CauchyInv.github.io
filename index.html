@@ -3,21 +3,21 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Personal academic homepage of Xitai Jiang." />
+  <meta name="description" content="Personal academic homepage of Xitai Jiang, Ph.D. student at Tsinghua University. Research interests: LLM post-training and agentic AI." />
   <meta name="author" content="Xitai Jiang" />
   <meta name="theme-color" content="#ffffff" />
   <title>Xitai Jiang | Academic Homepage</title>
 
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
   <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
   <!-- =========================================================
-       QUICK EDIT GUIDE
-       1) Replace all placeholder text such as [Advisor], [Institute], etc.
-       2) Replace links marked with href="#".
-       3) Replace assets/profile-placeholder.svg with your own photo if desired.
-       4) Delete or comment out sections you do not need.
+       CURRENT PUBLIC VERSION
+       - Add your profile photo under assets/ and update the image path.
+       - Add assets/cv.pdf and uncomment the CV links when ready.
+       - The first two manuscripts intentionally omit unreleased author/link details.
        ========================================================= -->
 
   <header class="site-header">
@@ -37,48 +37,44 @@
         <a href="#projects">Projects</a>
         <a href="#experience">Experience</a>
         <a href="#education">Education</a>
-        <a href="#service">Service</a>
+        <a href="#awards">Awards</a>
         <a href="#contact">Contact</a>
+        <!-- Add assets/cv.pdf, then uncomment:
         <a class="nav-cta" href="assets/cv.pdf" target="_blank" rel="noopener">CV</a>
+        -->
         <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">◐</button>
       </nav>
     </div>
   </header>
 
   <main>
-    <!-- ========================= HERO ========================= -->
+<!-- ========================= HERO ========================= -->
     <section class="hero section" id="home">
       <div class="container hero-grid">
         <div class="hero-photo-wrap">
-          <img
-            class="hero-photo"
-            src="assets/profile-placeholder.svg"
-            alt="Profile photo of Xitai Jiang"
-          />
+          <img class="hero-photo" src="assets/profile-placeholder.svg" alt="Profile photo of Xitai Jiang" />
         </div>
-
         <div class="hero-content">
           <p class="eyebrow">Academic Homepage</p>
           <h1>Xitai Jiang <span class="cn-name">蒋西泰</span></h1>
-          <p class="hero-role">Ph.D. Student · Tsinghua University</p>
-
+          <p class="hero-role">Ph.D. Student · Qiuzhen College, Tsinghua University</p>
           <p class="hero-summary">
-            My research focuses on large language models, reinforcement learning,
-            mathematical reasoning, credit assignment, and trustworthy generative models.
+            My research focuses on <strong>LLM post-training</strong> and <strong>agentic AI</strong>,
+            with particular interests in reinforcement learning, on-policy distillation,
+            credit assignment, and self-improving language agents.
           </p>
-
           <div class="hero-links">
-            <a class="button primary" href="mailto:your-email@example.com">Email</a>
-            <a class="button" href="#" target="_blank" rel="noopener">Google Scholar</a>
+            <a class="button primary" href="mailto:jiang-xt21@mails.tsinghua.edu.cn">Email</a>
+            <a class="button" href="https://dblp.org/pid/401/8285.html" target="_blank" rel="noopener">DBLP</a>
             <a class="button" href="https://github.com/CauchyInv" target="_blank" rel="noopener">GitHub</a>
+            <!-- Add assets/cv.pdf, then uncomment:
             <a class="button" href="assets/cv.pdf" target="_blank" rel="noopener">CV</a>
-            <a class="button" href="#" target="_blank" rel="noopener">LinkedIn</a>
+            -->
           </div>
-
           <div class="hero-meta">
             <span>Tsinghua University</span>
-            <span>Beijing, China</span>
-            <span>Open to research collaboration</span>
+            <span>LLM Post-Training</span>
+            <span>Agentic AI</span>
           </div>
         </div>
       </div>
@@ -91,24 +87,18 @@
           <p class="eyebrow">About</p>
           <h2>About Me</h2>
         </div>
-
         <div class="prose">
           <p>
-            I am a Ph.D. student at <strong>Tsinghua University</strong>, advised by
-            <strong>[Advisor Name]</strong>. My research lies at the intersection of
-            large language models, reinforcement learning, and reasoning.
+            I received my B.S. degree in <strong>Mathematics and Applied Mathematics</strong>
+            from <strong>Qiuzhen College, Tsinghua University</strong>. I am currently pursuing
+            my Ph.D. at Tsinghua University through a joint doctoral training arrangement under
+            the supervision of <strong>Prof. Gao Huang</strong>.
           </p>
-
           <p>
-            I am particularly interested in how curriculum design, intermediate
-            supervision, and fine-grained credit assignment can improve the reasoning
-            capabilities of language models. I am also interested in understanding
-            generation behavior and failure modes in modern generative models.
-          </p>
-
-          <p>
-            Previously, I received my B.S. degree from <strong>[University]</strong>,
-            where I worked on the training dynamics and generalization of neural networks.
+            My research interests primarily lie in <strong>LLM post-training</strong> and
+            <strong>agentic AI</strong>, with a particular focus on reinforcement learning,
+            on-policy distillation, credit assignment, and improving the reasoning capabilities
+            of large language models.
           </p>
         </div>
       </div>
@@ -120,41 +110,13 @@
         <div class="section-heading">
           <p class="eyebrow">Research</p>
           <h2>Research Interests</h2>
-          <p>
-            A broad overview of the research directions I am currently exploring.
-          </p>
+          <p>I am broadly interested in how language models can learn more effectively after pre-training and become more capable autonomous reasoners.</p>
         </div>
-
         <div class="card-grid research-grid">
-          <article class="card">
-            <h3>Large Language Models</h3>
-            <p>Learning, reasoning, post-training, alignment, and evaluation of foundation models.</p>
-          </article>
-
-          <article class="card">
-            <h3>Reinforcement Learning</h3>
-            <p>RL for reasoning, verifiable rewards, policy optimization, and efficient post-training.</p>
-          </article>
-
-          <article class="card">
-            <h3>Mathematical Reasoning</h3>
-            <p>Long-horizon reasoning, verifiable problem solving, and curriculum-based training.</p>
-          </article>
-
-          <article class="card">
-            <h3>Credit Assignment</h3>
-            <p>Fine-grained, token-level, and process-aware learning signals for complex trajectories.</p>
-          </article>
-
-          <article class="card">
-            <h3>Generative Models</h3>
-            <p>Understanding local generation bias, hallucination, and failure modes in diffusion models.</p>
-          </article>
-
-          <article class="card">
-            <h3>Learning Dynamics</h3>
-            <p>Optimization, generalization, symmetry, and nonlinear dynamics of neural networks.</p>
-          </article>
+          <article class="card"><h3>LLM Post-Training</h3><p>Reinforcement learning, on-policy distillation, reward design, and data-efficient adaptation for large language models.</p></article>
+          <article class="card"><h3>Agentic AI</h3><p>Learning, reasoning, self-critique, and autonomous problem solving for language-model agents.</p></article>
+          <article class="card"><h3>Credit Assignment</h3><p>Fine-grained learning signals and process supervision for long-horizon reasoning.</p></article>
+          <article class="card"><h3>Reasoning</h3><p>Improving mathematical and scientific reasoning through reinforcement learning and distillation.</p></article>
         </div>
       </div>
     </section>
@@ -163,38 +125,15 @@
     <section class="section alt" id="news">
       <div class="container narrow">
         <div class="section-heading row-heading">
-          <div>
-            <p class="eyebrow">Updates</p>
-            <h2>News</h2>
-          </div>
-          <button class="text-button" id="newsToggle">Show more</button>
+          <div><p class="eyebrow">Updates</p><h2>News</h2></div>
+          <button class="text-button" id="newsToggle" type="button">Show more</button>
         </div>
-
         <div class="news-list" id="newsList">
-          <div class="news-item">
-            <time>Sep. 2026</time>
-            <p>[Add your latest research update, submission, release, or conference news here.]</p>
-          </div>
-
-          <div class="news-item">
-            <time>May 2026</time>
-            <p>[Add another recent research update here.]</p>
-          </div>
-
-          <div class="news-item">
-            <time>Apr. 2025</time>
-            <p>Presented our work at ICLR 2025.</p>
-          </div>
-
-          <div class="news-item extra-news">
-            <time>Mar. 2025</time>
-            <p>Our paper was accepted to ICLR 2025.</p>
-          </div>
-
-          <div class="news-item extra-news">
-            <time>2025</time>
-            <p>[Add scholarship, internship, talk, or project release here.]</p>
-          </div>
+          <div class="news-item"><time>Sep. 2026</time><p>Completed my research internship on Qwen model training, focusing on self-critique, data-efficient fine-tuning, and scientific-agent evaluation.</p></div>
+          <div class="news-item"><time>Aug. 2026</time><p><em>On-policy Distillation with Verifiable Reward</em> was released on arXiv.</p></div>
+          <div class="news-item"><time>May 2026</time><p><em>From Reasoning Chains to Verifiable Subproblems</em> was released on arXiv.</p></div>
+          <div class="news-item extra-news"><time>Feb. 2026</time><p><em>Thickening-to-Thinning</em> was released on arXiv.</p></div>
+          <div class="news-item extra-news"><time>Apr. 2025</time><p>Presented our work on diffusion-model text hallucination at ICLR 2025.</p></div>
         </div>
       </div>
     </section>
@@ -205,105 +144,91 @@
         <div class="section-heading">
           <p class="eyebrow">Publications</p>
           <h2>Selected Publications</h2>
-          <p>
-            Selected work. Replace the placeholder links with your real Paper / Code / Project URLs.
-          </p>
+          <p>Recent work on LLM post-training, reasoning, and generative models.</p>
         </div>
-
         <div class="publication-list">
+
           <article class="publication">
-            <div class="publication-thumb">
-              <img src="assets/paper-placeholder.svg" alt="Paper teaser placeholder" />
-            </div>
+            <div class="publication-thumb"><img src="assets/paper-placeholder.svg" alt="Paper teaser placeholder" /></div>
             <div class="publication-body">
-              <p class="venue">ICLR 2025</p>
-              <h3>Towards Understanding Text Hallucination of Diffusion Models via Local Generation Bias</h3>
-              <p class="authors">
-                <strong>Xitai Jiang</strong>, [Coauthor 1], [Coauthor 2], ...
-              </p>
-              <p class="publication-desc">
-                A short 1–2 sentence description of the core idea, contribution, or finding of this work.
-              </p>
-              <div class="tag-row">
-                <span class="tag">Diffusion Models</span>
-                <span class="tag">Hallucination</span>
-                <span class="tag">Generation Bias</span>
-              </div>
-              <div class="link-row">
-                <a href="#" target="_blank" rel="noopener">Paper</a>
-                <a href="#" target="_blank" rel="noopener">arXiv</a>
-                <a href="#" target="_blank" rel="noopener">Code</a>
-                <a href="#" target="_blank" rel="noopener">Project</a>
-                <a href="#" target="_blank" rel="noopener">BibTeX</a>
-              </div>
+              <p class="venue">Manuscript · 2026</p>
+              <h3>Do We Really Need KL Divergence for On-Policy Distillation of Large Language Models?</h3>
+              <p class="publication-desc">Ongoing work studying the role of KL regularization in on-policy distillation for large language models.</p>
+              <div class="tag-row"><span class="tag">On-Policy Distillation</span><span class="tag">KL Regularization</span><span class="tag">LLM Post-Training</span></div>
+              <p class="pending-note">Author list and public links will be added after release.</p>
             </div>
           </article>
 
           <article class="publication">
-            <div class="publication-thumb">
-              <img src="assets/paper-placeholder.svg" alt="Paper teaser placeholder" />
-            </div>
+            <div class="publication-thumb"><img src="assets/paper-placeholder.svg" alt="Paper teaser placeholder" /></div>
             <div class="publication-body">
-              <p class="venue">[Venue / Preprint]</p>
-              <h3>[Your Second Paper Title]</h3>
-              <p class="authors">
-                <strong>Xitai Jiang</strong>, [Coauthor 1], [Coauthor 2]
-              </p>
-              <p class="publication-desc">
-                Add a concise summary explaining what problem the paper solves and what is new.
-              </p>
-              <div class="tag-row">
-                <span class="tag">LLM</span>
-                <span class="tag">Reinforcement Learning</span>
-                <span class="tag">Reasoning</span>
-              </div>
-              <div class="link-row">
-                <a href="#">Paper</a>
-                <a href="#">Code</a>
-                <a href="#">Project</a>
-              </div>
+              <p class="venue">Manuscript · 2026</p>
+              <h3>Contextual Credit Diffusion for LLM Post-training</h3>
+              <p class="publication-desc">Ongoing work on propagating contextual learning signals for fine-grained credit assignment in LLM post-training.</p>
+              <div class="tag-row"><span class="tag">Credit Assignment</span><span class="tag">LLM Post-Training</span><span class="tag">Reasoning</span></div>
+              <p class="pending-note">Author list and public links will be added after release.</p>
+            </div>
+          </article>
+
+          <article class="publication">
+            <div class="publication-thumb"><img src="assets/paper-placeholder.svg" alt="Paper teaser placeholder" /></div>
+            <div class="publication-body">
+              <p class="venue">arXiv · 2026</p>
+              <h3>On-policy Distillation with Verifiable Reward</h3>
+              <p class="authors">Wenze Lin, Jiale Zhao, <strong>Xitai Jiang</strong>, Songde Rao, Yining Li, Shenzhi Wang, Bingxiang He, Gao Huang</p>
+              <p class="publication-desc">Studies on-policy distillation with verifiable reward for improving large language model reasoning.</p>
+              <div class="tag-row"><span class="tag">On-Policy Distillation</span><span class="tag">Verifiable Reward</span><span class="tag">Reasoning</span></div>
+              <div class="link-row"><a href="https://arxiv.org/abs/2608.24696" target="_blank" rel="noopener">Paper</a><a href="https://github.com/LeapLabTHU/OPDVR" target="_blank" rel="noopener">Code</a></div>
+            </div>
+          </article>
+
+          <article class="publication">
+            <div class="publication-thumb"><img src="assets/paper-placeholder.svg" alt="Paper teaser placeholder" /></div>
+            <div class="publication-body">
+              <p class="venue">arXiv · 2026</p>
+              <h3>From Reasoning Chains to Verifiable Subproblems: Curriculum Reinforcement Learning Enables Credit Assignment for LLM Reasoning</h3>
+              <p class="authors"><strong>Xitai Jiang</strong>, Zihan Tang, Wenze Lin, Yang Yue, Shenzhi Wang, Gao Huang</p>
+              <p class="publication-desc">Introduces a curriculum of verifiable subproblems to provide denser learning signals and more fine-grained credit assignment for LLM reasoning.</p>
+              <div class="tag-row"><span class="tag">Curriculum RL</span><span class="tag">Credit Assignment</span><span class="tag">Mathematical Reasoning</span></div>
+              <div class="link-row"><a href="https://arxiv.org/abs/2605.22074" target="_blank" rel="noopener">Paper</a></div>
+            </div>
+          </article>
+
+          <article class="publication">
+            <div class="publication-thumb"><img src="assets/paper-placeholder.svg" alt="Paper teaser placeholder" /></div>
+            <div class="publication-body">
+              <p class="venue">arXiv · 2026</p>
+              <h3>Thickening-to-Thinning: Reward Shaping via Human-Inspired Learning Dynamics for LLM Reasoning</h3>
+              <p class="authors">Wenze Lin, Zhen Yang, <strong>Xitai Jiang</strong>, Pony Ma, Gao Huang</p>
+              <p class="publication-desc">Explores human-inspired reward shaping for improving the learning dynamics and reasoning performance of large language models.</p>
+              <div class="tag-row"><span class="tag">Reward Shaping</span><span class="tag">Reinforcement Learning</span><span class="tag">Reasoning</span></div>
+              <div class="link-row"><a href="https://arxiv.org/abs/2602.04265" target="_blank" rel="noopener">Paper</a></div>
+            </div>
+          </article>
+
+          <article class="publication">
+            <div class="publication-thumb"><img src="assets/paper-placeholder.svg" alt="Paper teaser placeholder" /></div>
+            <div class="publication-body">
+              <p class="venue">ICLR 2025</p>
+              <h3>Towards Understanding Text Hallucination of Diffusion Models via Local Generation Bias</h3>
+              <p class="authors">Rui Lu, Runzhe Wang, Kaifeng Lyu, <strong>Xitai Jiang</strong>, Gao Huang, Mengdi Wang</p>
+              <p class="publication-desc">Studies text hallucination in diffusion-based image generation through the lens of local generation bias.</p>
+              <div class="tag-row"><span class="tag">Diffusion Models</span><span class="tag">Hallucination</span><span class="tag">Generative Models</span></div>
+              <div class="link-row"><a href="https://arxiv.org/abs/2503.03595" target="_blank" rel="noopener">Paper</a><a href="https://proceedings.iclr.cc/paper_files/paper/2025/hash/3ca6d336ddaa316a6ae953a20b9477cf-Abstract-Conference.html" target="_blank" rel="noopener">ICLR</a></div>
             </div>
           </article>
         </div>
 
         <div class="subsection">
-          <h3 class="subsection-title">All Publications</h3>
-
-          <div class="year-block">
-            <h4>2027</h4>
-            <div class="compact-pub">
-              <span class="pub-index">[1]</span>
-              <div>
-                <strong>[Paper Title]</strong><br />
-                [Author list]. <em>[Venue]</em>.
-                <span class="inline-links"><a href="#">Paper</a> · <a href="#">Code</a></span>
-              </div>
-            </div>
-          </div>
-
-          <div class="year-block">
-            <h4>2026</h4>
-            <div class="compact-pub">
-              <span class="pub-index">[2]</span>
-              <div>
-                <strong>[Paper Title]</strong><br />
-                [Author list]. <em>[Venue / Under Review / Preprint]</em>.
-                <span class="inline-links"><a href="#">Paper</a> · <a href="#">Code</a></span>
-              </div>
-            </div>
-          </div>
-
-          <div class="year-block">
-            <h4>2025</h4>
-            <div class="compact-pub">
-              <span class="pub-index">[3]</span>
-              <div>
-                <strong>Towards Understanding Text Hallucination of Diffusion Models via Local Generation Bias</strong><br />
-                Xitai Jiang, [Coauthors]. <em>ICLR 2025</em>.
-                <span class="inline-links"><a href="#">Paper</a> · <a href="#">Code</a></span>
-              </div>
-            </div>
-          </div>
+          <h3 class="subsection-title">Publication List</h3>
+          <div class="year-block"><h4>2026</h4><div class="compact-pub-list">
+            <div class="compact-pub"><span class="pub-index">[1]</span><div><strong>Do We Really Need KL Divergence for On-Policy Distillation of Large Language Models?</strong><br><em>Manuscript, 2026.</em></div></div>
+            <div class="compact-pub"><span class="pub-index">[2]</span><div><strong>Contextual Credit Diffusion for LLM Post-training</strong><br><em>Manuscript, 2026.</em></div></div>
+            <div class="compact-pub"><span class="pub-index">[3]</span><div><strong>On-policy Distillation with Verifiable Reward</strong><br>Wenze Lin, Jiale Zhao, <strong>Xitai Jiang</strong>, Songde Rao, Yining Li, Shenzhi Wang, Bingxiang He, Gao Huang. <span class="inline-links"><a href="https://arxiv.org/abs/2608.24696" target="_blank" rel="noopener">Paper</a></span></div></div>
+            <div class="compact-pub"><span class="pub-index">[4]</span><div><strong>From Reasoning Chains to Verifiable Subproblems: Curriculum Reinforcement Learning Enables Credit Assignment for LLM Reasoning</strong><br><strong>Xitai Jiang</strong>, Zihan Tang, Wenze Lin, Yang Yue, Shenzhi Wang, Gao Huang. <span class="inline-links"><a href="https://arxiv.org/abs/2605.22074" target="_blank" rel="noopener">Paper</a></span></div></div>
+            <div class="compact-pub"><span class="pub-index">[5]</span><div><strong>Thickening-to-Thinning: Reward Shaping via Human-Inspired Learning Dynamics for LLM Reasoning</strong><br>Wenze Lin, Zhen Yang, <strong>Xitai Jiang</strong>, Pony Ma, Gao Huang. <span class="inline-links"><a href="https://arxiv.org/abs/2602.04265" target="_blank" rel="noopener">Paper</a></span></div></div>
+          </div></div>
+          <div class="year-block"><h4>2025</h4><div class="compact-pub-list"><div class="compact-pub"><span class="pub-index">[6]</span><div><strong>Towards Understanding Text Hallucination of Diffusion Models via Local Generation Bias</strong><br>Rui Lu, Runzhe Wang, Kaifeng Lyu, <strong>Xitai Jiang</strong>, Gao Huang, Mengdi Wang. <em>ICLR 2025.</em> <span class="inline-links"><a href="https://arxiv.org/abs/2503.03595" target="_blank" rel="noopener">Paper</a></span></div></div></div></div>
         </div>
       </div>
     </section>
@@ -311,46 +236,10 @@
     <!-- ========================= PROJECTS ========================= -->
     <section class="section alt" id="projects">
       <div class="container">
-        <div class="section-heading">
-          <p class="eyebrow">Projects</p>
-          <h2>Research Projects</h2>
-        </div>
-
+        <div class="section-heading"><p class="eyebrow">Projects</p><h2>Ongoing Research</h2><p>Current projects on on-policy distillation and curriculum-based post-training.</p></div>
         <div class="project-grid">
-          <article class="project-card">
-            <img src="assets/project-placeholder.svg" alt="Project preview placeholder" />
-            <div class="project-card-body">
-              <p class="venue">Research Project</p>
-              <h3>[Project Name]</h3>
-              <p>
-                One paragraph describing the goal, idea, method, and significance of the project.
-              </p>
-              <p class="contribution">
-                <strong>My contribution:</strong> [Your specific contribution.]
-              </p>
-              <div class="link-row">
-                <a href="#">Project Page</a>
-                <a href="#">GitHub</a>
-                <a href="#">Paper</a>
-                <a href="#">Demo</a>
-              </div>
-            </div>
-          </article>
-
-          <article class="project-card">
-            <img src="assets/project-placeholder.svg" alt="Project preview placeholder" />
-            <div class="project-card-body">
-              <p class="venue">Open Research</p>
-              <h3>[Second Project]</h3>
-              <p>
-                Use this card for a project that may not yet have a formal publication.
-              </p>
-              <div class="link-row">
-                <a href="#">GitHub</a>
-                <a href="#">Notes</a>
-              </div>
-            </div>
-          </article>
+          <article class="project-card"><img src="assets/project-placeholder.svg" alt="Project preview placeholder" /><div class="project-card-body"><p class="venue">Ongoing Research · 2026–Present</p><h3>Curriculum-Enhanced On-Policy Distillation</h3><p>Exploring how curriculum design can improve the learning efficiency and optimization dynamics of on-policy distillation for challenging reasoning tasks.</p><div class="tag-row"><span class="tag">Curriculum Learning</span><span class="tag">On-Policy Distillation</span><span class="tag">Reasoning</span></div></div></article>
+          <article class="project-card"><img src="assets/project-placeholder.svg" alt="Project preview placeholder" /><div class="project-card-body"><p class="venue">Ongoing Research · 2026–Present</p><h3>Perturbed On-Policy Distillation</h3><p>Exploring perturbation-based variants of on-policy distillation for more effective and robust LLM post-training.</p><div class="tag-row"><span class="tag">On-Policy Distillation</span><span class="tag">Robust Training</span><span class="tag">LLM Post-Training</span></div></div></article>
         </div>
       </div>
     </section>
@@ -358,39 +247,10 @@
     <!-- ========================= EXPERIENCE ========================= -->
     <section class="section" id="experience">
       <div class="container">
-        <div class="section-heading">
-          <p class="eyebrow">Experience</p>
-          <h2>Research & Industry Experience</h2>
-        </div>
-
+        <div class="section-heading"><p class="eyebrow">Experience</p><h2>Research & Internship Experience</h2></div>
         <div class="timeline">
-          <article class="timeline-item">
-            <div class="timeline-date">2025 – Present</div>
-            <div class="timeline-content">
-              <h3>Ph.D. Researcher · Tsinghua University</h3>
-              <p class="muted">Advisor: [Advisor Name]</p>
-              <p>
-                Research on large language models, reinforcement learning, and mathematical reasoning.
-              </p>
-            </div>
-          </article>
-
-          <article class="timeline-item">
-            <div class="timeline-date">[Year – Year]</div>
-            <div class="timeline-content">
-              <h3>[Research Intern / Visiting Researcher] · [Organization]</h3>
-              <p class="muted">Mentor: [Mentor Name]</p>
-              <p>[Describe your work, project, or research direction.]</p>
-            </div>
-          </article>
-
-          <article class="timeline-item">
-            <div class="timeline-date">[Year]</div>
-            <div class="timeline-content">
-              <h3>[Industry Internship] · [Company]</h3>
-              <p>[Describe your team and the problem you worked on.]</p>
-            </div>
-          </article>
+          <article class="timeline-item"><div class="timeline-date">Feb. 2026 – Sep. 2026</div><div class="timeline-content"><h3>Research Intern · Qwen Model Training</h3><ul class="experience-list"><li>Worked on improving the self-critique capabilities of Qwen language models.</li><li>Developed data-efficient fine-tuning and subset-selection pipelines, substantially reducing training data volume while preserving model performance across multiple reasoning and scientific benchmarks.</li><li>Conducted large-scale training and evaluation experiments on Qwen models.</li><li>Worked on improving model performance on Terminal-Bench Science.</li></ul></div></article>
+          <article class="timeline-item"><div class="timeline-date">Jan. 2025 – Jul. 2025</div><div class="timeline-content"><h3>Research Contributor · Formalized Mathematics Data for Kimi</h3><ul class="experience-list"><li>Contributed Lean-formalized mathematical reasoning data to support model training for competitive mathematics.</li><li>Participated extensively in the formalization of NuminaMath problems, translating competition-level mathematical proofs into Lean.</li><li>Independently contributed to more than 1,000 problems and fully formalized over 10% of the released benchmark.</li></ul></div></article>
         </div>
       </div>
     </section>
@@ -398,215 +258,33 @@
     <!-- ========================= EDUCATION ========================= -->
     <section class="section alt" id="education">
       <div class="container narrow">
-        <div class="section-heading">
-          <p class="eyebrow">Education</p>
-          <h2>Education</h2>
-        </div>
-
+        <div class="section-heading"><p class="eyebrow">Education</p><h2>Education</h2></div>
         <div class="timeline">
-          <article class="timeline-item">
-            <div class="timeline-date">2025 – Present</div>
-            <div class="timeline-content">
-              <h3>Tsinghua University</h3>
-              <p><strong>Ph.D. in [Program / Department]</strong></p>
-              <p class="muted">Advisor: [Advisor Name]</p>
-            </div>
-          </article>
-
-          <article class="timeline-item">
-            <div class="timeline-date">2021 – 2025</div>
-            <div class="timeline-content">
-              <h3>[University Name]</h3>
-              <p><strong>B.S. in [Major]</strong></p>
-              <p>
-                Undergraduate thesis:
-                <em>Towards Understanding Nonlinear Training Dynamics of Neural Networks</em>.
-              </p>
-              <p class="muted">Advisor: [Advisor Name]</p>
-            </div>
-          </article>
+          <article class="timeline-item"><div class="timeline-date">2025 – 2029</div><div class="timeline-content"><h3>Qiuzhen College, Tsinghua University</h3><p><strong>Ph.D. Student</strong></p><p class="muted">Joint doctoral training under the supervision of Prof. Gao Huang.</p></div></article>
+          <article class="timeline-item"><div class="timeline-date">2021 – 2025</div><div class="timeline-content"><h3>Qiuzhen College, Tsinghua University</h3><p><strong>B.S. in Mathematics and Applied Mathematics</strong></p></div></article>
         </div>
       </div>
     </section>
 
     <!-- ========================= AWARDS ========================= -->
     <section class="section" id="awards">
-      <div class="container narrow">
-        <div class="section-heading">
-          <p class="eyebrow">Recognition</p>
-          <h2>Honors & Awards</h2>
-        </div>
-
-        <div class="simple-list">
-          <div><span>2026</span><p>[Scholarship / Award Name]</p></div>
-          <div><span>2025</span><p>[Outstanding Thesis / Graduation Honor]</p></div>
-          <div><span>2024</span><p>[Academic Competition / Scholarship]</p></div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ========================= ACADEMIC SERVICE ========================= -->
-    <section class="section alt" id="service">
       <div class="container">
-        <div class="section-heading">
-          <p class="eyebrow">Community</p>
-          <h2>Academic Service</h2>
-        </div>
-
+        <div class="section-heading"><p class="eyebrow">Recognition</p><h2>Honors & Awards</h2></div>
         <div class="two-column">
-          <div class="card">
-            <h3>Reviewer</h3>
-            <ul>
-              <li>[Conference / Journal], [Year]</li>
-              <li>[Conference / Journal], [Year]</li>
-              <li>[Workshop], [Year]</li>
-            </ul>
-          </div>
-
-          <div class="card">
-            <h3>Organization</h3>
-            <ul>
-              <li>[Workshop organizer / volunteer / student organizer]</li>
-              <li>[Reading group / seminar organization]</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ========================= TALKS ========================= -->
-    <section class="section" id="talks">
-      <div class="container narrow">
-        <div class="section-heading">
-          <p class="eyebrow">Speaking</p>
-          <h2>Talks</h2>
-        </div>
-
-        <div class="simple-list">
-          <div>
-            <span>[Sep. 2027]</span>
-            <p>
-              <strong>[Talk Title]</strong><br />
-              [Institution / Seminar / Conference] · <a href="#">Slides</a>
-            </p>
-          </div>
-
-          <div>
-            <span>[Jun. 2027]</span>
-            <p>
-              <strong>[Talk Title]</strong><br />
-              [Venue] · <a href="#">Slides</a>
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ========================= TEACHING ========================= -->
-    <section class="section alt" id="teaching">
-      <div class="container narrow">
-        <div class="section-heading">
-          <p class="eyebrow">Teaching</p>
-          <h2>Teaching</h2>
-        </div>
-
-        <div class="simple-list">
-          <div>
-            <span>[Spring 2027]</span>
-            <p><strong>Teaching Assistant · [Course Name]</strong><br />Tsinghua University</p>
-          </div>
-          <div>
-            <span>[Fall 2026]</span>
-            <p><strong>Teaching Assistant · [Course Name]</strong><br />Tsinghua University</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ========================= OPEN SOURCE ========================= -->
-    <section class="section" id="opensource">
-      <div class="container">
-        <div class="section-heading">
-          <p class="eyebrow">Engineering</p>
-          <h2>Open Source</h2>
-        </div>
-
-        <div class="card-grid">
-          <article class="card">
-            <h3>[Repository Name]</h3>
-            <p>[One-line description of the repository.]</p>
-            <div class="link-row">
-              <a href="#">GitHub</a>
-              <a href="#">Documentation</a>
-            </div>
-          </article>
-
-          <article class="card">
-            <h3>[Dataset / Benchmark]</h3>
-            <p>[One-line description of the dataset or benchmark.]</p>
-            <div class="link-row">
-              <a href="#">GitHub</a>
-              <a href="#">Hugging Face</a>
-            </div>
-          </article>
-
-          <article class="card">
-            <h3>[Model Release]</h3>
-            <p>[One-line description of the model release.]</p>
-            <div class="link-row">
-              <a href="#">Model</a>
-              <a href="#">Code</a>
-            </div>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <!-- ========================= SKILLS ========================= -->
-    <section class="section alt" id="skills">
-      <div class="container">
-        <div class="section-heading">
-          <p class="eyebrow">Skills</p>
-          <h2>Technical Skills</h2>
-        </div>
-
-        <div class="skills-grid">
-          <div class="skill-group">
-            <h3>Programming</h3>
-            <p>Python · C++ · Bash · Git</p>
-          </div>
-
-          <div class="skill-group">
-            <h3>Machine Learning</h3>
-            <p>PyTorch · Hugging Face · Transformers · vLLM</p>
-          </div>
-
-          <div class="skill-group">
-            <h3>LLM Training</h3>
-            <p>RLHF / RLVR · GRPO / PPO · Distributed Training · Evaluation</p>
-          </div>
-
-          <div class="skill-group">
-            <h3>Research</h3>
-            <p>LLMs · Reinforcement Learning · Reasoning · Diffusion Models</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ========================= MISC ========================= -->
-    <section class="section" id="misc">
-      <div class="container narrow">
-        <div class="section-heading">
-          <p class="eyebrow">Beyond Research</p>
-          <h2>Miscellaneous</h2>
-        </div>
-
-        <div class="prose">
-          <p>
-            Outside research, I enjoy [photography / music / running / reading / traveling / etc.].
-            This section is optional and can be deleted if you prefer a purely academic homepage.
-          </p>
+          <div class="award-panel"><h3>Academic Honors & Competitions</h3><div class="simple-list">
+            <div><span>2021</span><p>Selected for the Yau Mathematical Sciences Leaders Program, Tsinghua University</p></div>
+            <div><span>2020</span><p>Silver Medal, 36th Chinese Mathematical Olympiad (CMO)</p></div>
+            <div><span>2019</span><p>First Prize, Tsinghua University Mathematics Golden Autumn Camp</p></div>
+            <div><span>2019</span><p>Provincial First Prize, National High School Mathematics League (15th in the province)</p></div>
+            <div><span>2019</span><p>Third Prize, China Southeast Mathematical Olympiad</p></div>
+          </div></div>
+          <div class="award-panel"><h3>Scholarships</h3><div class="simple-list">
+            <div><span>2025</span><p>Graduate Freshman Scholarship, Qiuzhen College, Tsinghua University</p></div>
+            <div><span>2023</span><p>National Encouragement Scholarship, Tsinghua University</p></div>
+            <div><span>2023</span><p>“Hao Dushu” Scholarship, Tsinghua University</p></div>
+            <div><span>2022</span><p>Comprehensive Excellence Scholarship, Tsinghua University</p></div>
+            <div><span>2022</span><p>Second-Class Scholarship, Qiuzhen College, Tsinghua University</p></div>
+          </div></div>
         </div>
       </div>
     </section>
@@ -614,38 +292,14 @@
     <!-- ========================= CONTACT ========================= -->
     <section class="section alt" id="contact">
       <div class="container narrow">
-        <div class="section-heading">
-          <p class="eyebrow">Contact</p>
-          <h2>Get in Touch</h2>
-        </div>
-
+        <div class="section-heading"><p class="eyebrow">Contact</p><h2>Get in Touch</h2></div>
         <div class="contact-card">
-          <p>
-            I am happy to discuss research ideas and potential collaborations.
-            The best way to reach me is by email.
-          </p>
-
+          <p>I am happy to discuss research ideas and potential collaborations. The best way to reach me is by email.</p>
           <dl class="contact-list">
-            <div>
-              <dt>Email</dt>
-              <dd><a href="mailto:your-email@example.com">your-email@example.com</a></dd>
-            </div>
-            <div>
-              <dt>GitHub</dt>
-              <dd><a href="https://github.com/CauchyInv" target="_blank" rel="noopener">github.com/CauchyInv</a></dd>
-            </div>
-            <div>
-              <dt>Google Scholar</dt>
-              <dd><a href="#" target="_blank" rel="noopener">Add your Scholar profile</a></dd>
-            </div>
-            <div>
-              <dt>LinkedIn</dt>
-              <dd><a href="#" target="_blank" rel="noopener">Add your LinkedIn profile</a></dd>
-            </div>
-            <div>
-              <dt>Office</dt>
-              <dd>[Building / Room], Tsinghua University</dd>
-            </div>
+            <div><dt>Email</dt><dd><a href="mailto:jiang-xt21@mails.tsinghua.edu.cn">jiang-xt21@mails.tsinghua.edu.cn</a></dd></div>
+            <div><dt>GitHub</dt><dd><a href="https://github.com/CauchyInv" target="_blank" rel="noopener">github.com/CauchyInv</a></dd></div>
+            <div><dt>DBLP</dt><dd><a href="https://dblp.org/pid/401/8285.html" target="_blank" rel="noopener">dblp.org/pid/401/8285.html</a></dd></div>
+            <div><dt>Affiliation</dt><dd>Qiuzhen College, Tsinghua University</dd></div>
           </dl>
         </div>
       </div>
