@@ -48,47 +48,33 @@
   <main>
 <!-- ========================= HERO + ABOUT ========================= -->
     <section class="hero section" id="home">
-      <div class="container hero-grid">
-        <div class="hero-photo-wrap">
-          <img class="hero-photo" src="assets/profile-placeholder.svg" alt="Profile photo of Xitai Jiang" />
+      <div class="container hero-layout">
+        <div class="hero-photo-column">
+          <img class="hero-photo" src="assets/profile.jpg" alt="Profile photo of Xitai Jiang" />
         </div>
 
-        <div class="hero-content">
-          <h1>Xitai Jiang <span class="cn-name">蒋西泰</span></h1>
+        <div class="hero-panels">
+          <section class="hero-panel intro-panel" aria-label="Profile summary">
+            <h1 class="hero-heading">Xitai Jiang <span class="cn-name">蒋西泰</span></h1>
+            <p class="hero-role">Ph.D. Student · Qiuzhen College, Tsinghua University</p>
+            <p class="hero-summary">My research focuses on <strong>LLM post-training</strong>, <strong>agentic AI</strong>, and <strong>reasoning</strong>.</p>
+            <div class="hero-links">
+              <a class="button primary" href="mailto:jiang-xt21@mails.tsinghua.edu.cn">Email</a>
+              <a class="button" href="https://dblp.org/pid/401/8285.html" target="_blank" rel="noopener">DBLP</a>
+              <a class="button" href="https://github.com/CauchyInv" target="_blank" rel="noopener">GitHub</a>
+            </div>
+          </section>
 
-          <p class="hero-role">
-            Ph.D. Student · Qiuzhen College, Tsinghua University
-          </p>
-
-          <p class="hero-summary">
-            My research focuses on <strong>LLM post-training</strong>,
-            <strong>agentic AI</strong>, and <strong>reasoning</strong>.
-          </p>
-
-          <div class="hero-links">
-            <a class="button primary" href="mailto:jiang-xt21@mails.tsinghua.edu.cn">Email</a>
-            <a class="button" href="https://dblp.org/pid/401/8285.html" target="_blank" rel="noopener">DBLP</a>
-            <a class="button" href="https://github.com/CauchyInv" target="_blank" rel="noopener">GitHub</a>
-          </div>
-
-          <div class="hero-about" id="about">
-            <h2>About Me</h2>
-            <p>
-              I received my B.S. degree in <strong>Mathematics and Applied Mathematics</strong>
-              from <strong>Qiuzhen College, Tsinghua University</strong>. I am currently pursuing
-              my Ph.D. at Tsinghua University through a joint doctoral training arrangement under
-              the supervision of <strong>Prof. Gao Huang</strong>.
-            </p>
-            <p>
-              My research interests lie in <strong>LLM post-training</strong>,
-              <strong>agentic AI</strong>, and <strong>reasoning</strong>.
-            </p>
-          </div>
+          <section class="hero-panel about-panel" id="about" aria-label="About Me">
+            <h2 class="hero-heading">About Me</h2>
+            <p>I received my B.S. degree in <strong>Mathematics and Applied Mathematics</strong> from <strong>Qiuzhen College, Tsinghua University</strong>. I am currently pursuing my Ph.D. at Tsinghua University through a joint doctoral training arrangement under the supervision of <strong>Prof. Gao Huang</strong>.</p>
+            <p>My research interests lie in <strong>LLM post-training</strong>, <strong>agentic AI</strong>, and <strong>reasoning</strong>.</p>
+          </section>
         </div>
       </div>
     </section>
 
-    <!-- ========================= RESEARCH INTERESTS ========================= -->
+<!-- ========================= RESEARCH INTERESTS ========================= -->
     <section class="section" id="research">
       <div class="container">
         <div class="section-heading">
@@ -120,7 +106,7 @@
           <button class="text-button" id="newsToggle" type="button">Show more</button>
         </div>
         <div class="news-list" id="newsList">
-          <div class="news-item"><time>Sep. 2026</time><p>Completed my research internship on Qwen model training, focusing on self-critique, data-efficient fine-tuning, and scientific-agent evaluation.</p></div>
+          <div class="news-item"><time>Sep. 2026</time><p>Completed my internship on Qwen foundation model training, focusing on self-critique, data-efficient fine-tuning, and scientific-agent evaluation.</p></div>
           <div class="news-item"><time>Aug. 2026</time><p><em>On-policy Distillation with Verifiable Reward</em> is under review at ICLR 2027.</p></div>
           <div class="news-item"><time>May 2026</time><p><em>From Reasoning Chains to Verifiable Subproblems</em> was accepted to NeurIPS 2026.</p></div>
           <div class="news-item extra-news"><time>Feb. 2026</time><p><em>Boosting LLM Reasoning via Human-Inspired Reward Shaping</em> was accepted to NeurIPS 2026.</p></div>
@@ -155,7 +141,8 @@
             </div>
           </article>
 
-          <article class="publication compact-publication">
+          <article class="publication compact-publication with-figure">
+            <div class="publication-thumb"><img src="assets/paper-opdvr.png" alt="Main figure from On-policy Distillation with Verifiable Reward" /></div>
             <div class="publication-body">
               <p class="venue">ICLR 2027 · Under Review</p>
               <h3>On-policy Distillation with Verifiable Reward</h3>
@@ -167,7 +154,8 @@
             </div>
           </article>
 
-          <article class="publication compact-publication">
+          <article class="publication compact-publication with-figure">
+            <div class="publication-thumb"><img src="assets/paper-scrl.png" alt="Main figure from the SCRL paper" /></div>
             <div class="publication-body">
               <p class="venue">NeurIPS 2026</p>
               <h3>From Reasoning Chains to Verifiable Subproblems: Curriculum Reinforcement Learning Enables Credit Assignment for LLM Reasoning</h3>
@@ -179,7 +167,8 @@
             </div>
           </article>
 
-          <article class="publication compact-publication">
+          <article class="publication compact-publication with-figure">
+            <div class="publication-thumb"><img src="assets/paper-boosting.png" alt="Main figure from Boosting LLM Reasoning via Human-Inspired Reward Shaping" /></div>
             <div class="publication-body">
               <p class="venue">NeurIPS 2026</p>
               <h3>Boosting LLM Reasoning via Human-Inspired Reward Shaping</h3>
@@ -191,7 +180,8 @@
             </div>
           </article>
 
-          <article class="publication compact-publication">
+          <article class="publication compact-publication with-figure">
+            <div class="publication-thumb"><img src="assets/paper-diffusion.png" alt="Main figure from the diffusion-model text hallucination paper" /></div>
             <div class="publication-body">
               <p class="venue">ICLR 2025</p>
               <h3>Towards Understanding Text Hallucination of Diffusion Models via Local Generation Bias</h3>
@@ -212,7 +202,7 @@
       <div class="container">
         <div class="section-heading"><p class="eyebrow">Experience</p><h2>Research & Internship Experience</h2></div>
         <div class="timeline">
-          <article class="timeline-item"><div class="timeline-date">Feb. 2026 – Sep. 2026</div><div class="timeline-content"><h3>Intern · Qwen Foundation Model Team</h3><ul class="experience-list"><li>Worked on improving the self-critique capabilities of Qwen language models.</li><li>Developed data-efficient fine-tuning and subset-selection pipelines, substantially reducing training data volume while preserving model performance across multiple reasoning and scientific benchmarks.</li><li>Optimized model performance on ArxivMath, CRITPT, SciCode, and Terminal-Bench Science.</li></ul></div></article>
+          <article class="timeline-item"><div class="timeline-date">Feb. 2026 – Sep. 2026</div><div class="timeline-content"><h3>Intern · Qwen Foundation Model Training</h3><ul class="experience-list"><li>Worked on improving the self-critique capabilities of Qwen language models.</li><li>Developed data-efficient fine-tuning and subset-selection pipelines, substantially reducing training data volume while preserving model performance across multiple reasoning and scientific benchmarks.</li><li>Optimized model performance on ArxivMath, CRITPT, SciCode, and Terminal-Bench Science.</li></ul></div></article>
           <article class="timeline-item"><div class="timeline-date">Jan. 2025 – Jul. 2025</div><div class="timeline-content"><h3>Research Contributor · Formalized Mathematics Data for Kimi</h3><ul class="experience-list"><li>Contributed Lean-formalized mathematical reasoning data for competitive mathematics by formalizing NuminaMath problems and translating competition-level proofs into Lean.</li><li>Independently contributed to more than 1,000 problems and fully formalized over 10% of the released benchmark.</li></ul></div></article>
         </div>
       </div>
