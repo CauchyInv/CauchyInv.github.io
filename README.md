@@ -1,12 +1,13 @@
-# Xitai Jiang — Academic Homepage
+# Xitai Jiang — Academic Homepage v3
 
-Ready-to-deploy GitHub Pages files for `https://cauchyinv.github.io/`.
+Updated version with:
 
-## Deploy
-Upload everything in this folder to the root of the `CauchyInv.github.io` repository. Keep GitHub Pages on `main` + `/(root)`.
+- Research interests reduced to LLM Post-Training, Agentic AI, and Reasoning
+- First three papers marked as ICLR 2027 Under Review, with authors hidden
+- SCRL and Boosting LLM Reasoning marked as NeurIPS 2026
+- Latest title: Boosting LLM Reasoning via Human-Inspired Reward Shaping
+- Publication tags removed
+- More compact layout and less vertical whitespace
+- Duplicate publication list removed
 
-## Next edits
-1. Replace `assets/profile-placeholder.svg` with your photo and update the `<img>` path in `index.html`.
-2. Add `assets/cv.pdf` and uncomment the CV links in `index.html`.
-3. Replace paper/project placeholder SVGs with real teaser figures when available.
-4. Add author lists and public links for the two unreleased 2026 manuscripts after release.
+Deploy all files to the root of `CauchyInv.github.io` and keep GitHub Pages on `main` + `/(root)`.

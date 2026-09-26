@@ -796,3 +796,14 @@ html[data-theme="dark"] .button.primary {
 .award-panel h3 { margin-bottom: 18px; }
 #awards .simple-list > div { grid-template-columns: 72px 1fr; }
 @media (max-width: 720px) { #awards .simple-list > div { grid-template-columns: 1fr; } }
+
+/* Compact publication layout (v3) */
+.compact-publications{gap:14px;}
+.compact-publication{display:block;padding:20px 22px;}
+.compact-publication .publication-body h3{margin-bottom:8px;}
+.compact-publication .publication-desc{margin-bottom:8px;}
+.compact-publication .authors{margin-bottom:8px;}
+.compact-publication .link-row{margin-top:8px;}
+.research-grid{grid-template-columns:repeat(3,minmax(0,1fr));}
+.project-card>img{display:none;}
+@media(max-width:760px){.research-grid{grid-template-columns:1fr;}}
